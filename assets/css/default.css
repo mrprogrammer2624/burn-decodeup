@@ -1,0 +1,298 @@
+/* DEFAULT CSS START */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--primary-font);
+  background-color: var(--eyeball);
+  color: var(--black);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: var(--html);
+}
+
+.container {
+  padding: 0 12px;
+  width: 100%;
+  margin: auto;
+  max-width: var(--container-width);
+}
+
+/* TEXT COLORS START */
+.text-white {
+  color: rgba(var(--white), 1);
+}
+
+.text-black {
+  color: var(--black);
+}
+
+/* TEXT COLORS END */
+
+/* BACKGROUND COLORS START */
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-black {
+  background-color: var(--black);
+}
+
+/* BACKGROUND COLORS END */
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* FONT FAMILY */
+.font-primary {
+  font-family: var(--primary-font);
+}
+
+/* FONT SIZE */
+h1 {
+  font-size: var(--text-5xl);
+}
+
+h2 {
+  font-size: var(--text-4xl);
+}
+
+h3 {
+  font-size: var(--text-3xl);
+}
+
+h4 {
+  font-size: var(--text-2xl);
+}
+
+h5,
+.h5 {
+  font-size: var(--text-xl);
+}
+
+h6,
+.h6 {
+  font-size: var(--text-l);
+}
+
+p,
+.p {
+  font-size: var(--text-m);
+}
+
+/* SIZE */
+.w-100 {
+  width: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.vh-100 {
+  height: 100vh;
+}
+
+/* COMMON CSS */
+
+/* LINK CSS */
+a {
+  color: rgba(var(--circumorbital-ring), 1);
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.svg-hover,
+.hover-text,
+.hover-text svg {
+  transition: var(--transition-smooth);
+}
+
+.hover-text svg {
+  color: rgba(var(--circumorbital-ring), 1);
+}
+
+a:hover,
+svg-hover:hover,
+.hover-text:hover,
+.hover-text:hover svg {
+  color: var(--orange-pepper);
+}
+
+/* IMAGES RATIO */
+
+/* SECTION SPACING */
+
+/* SECTION TITLE */
+.primary-title {
+  font-family: var(--primary-font);
+  color: rgba(var(--mangu-black), 1);
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: -1px;
+  margin-bottom: var(--space-lg);
+}
+
+.paragraph-text {
+  font-family: var(--primary-font);
+  color: rgba(var(--mangu-black), 0.8);
+  font-size: var(--text-xl);
+  font-weight: 400;
+  text-align: start;
+  line-height: 1.44;
+}
+
+/* TRANSITION */
+.transition-smooth {
+  transition: var(--transition-smooth);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* z-index */
+.z-3 {
+  z-index: 3;
+}
+
+/* button css */
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-weight: 500;
+  transition: var(--transition-smooth);
+}
+
+.primary-btn {
+  min-width: 14.5rem;
+  min-height: 48px;
+  background-color: rgba(var(--orange-pepper), 1);
+  border: 1px solid rgba(var(--orange-pepper), 1);
+  border-radius: 12px;
+  padding: 3px var(--space-xl);
+  font-size: var(--text-l);
+  font-weight: 500;
+  color: rgba(var(--white), 1);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-smooth);
+  color: var(--white);
+  gap: var(--space-sm);
+}
+
+.primary-btn.secondary-btn {
+  background-color: rgba(var(--circumorbital-ring), 1);
+  border-color: rgba(var(--circumorbital-ring), 1);
+}
+
+.primary-btn:hover {
+  background-color: rgba(var(--orange-pepper), 0.8);
+}
+
+.primary-btn.secondary-btn:hover {
+  background-color: rgba(var(--circumorbital-ring), 0.8);
+}
+
+/* section xy */
+section {
+  margin-top: var(--section-default-space);
+}
+
+/* Flex CSS  */
+.d-none {
+  display: none;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/* Flex Align  */
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-end {
+  justify-content: end;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+/* Position CSS */
+.position-relative {
+  position: relative;
+}
+
+.position-sticky {
+  position: sticky;
+}
+
+/* Postion Align */
+.top-0 {
+  top: 0;
+}
+
+/* Spacing */
+.mt-0 {
+  margin-top: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+/* Coomon Css */
+.fade {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.offcanvas-backdrop {
+  background-color: rgba(var(--black), 0.5);
+}
+
+.lh-0 {
+  line-height: 0;
+}
+
+/* Images */
+.img-inherit {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  object-position: center;
+}
+
+.radius-inherit {
+  border-radius: inherit;
+}

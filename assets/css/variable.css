@@ -1,0 +1,51 @@
+:root {
+  /* fonts */
+  --primary-font: "Roboto", Arial, sans-serif;
+
+  /* Global Fonts Size  */
+  --html: 10px;
+
+  /* Fonts Size */
+  --text-5xl: 4.8rem;
+  --text-4xl: 3rem;
+  --text-3xl: 22px;
+  --text-2xl: 20px;
+  --text-xl: 18px;
+  --text-l: 16px;
+  --text-m: 14px;
+
+  /* Colors RGBA */
+  --circumorbital-ring-rgba: 96, 89, 201;
+  --orange-pepper-rgba: 212, 128, 2;
+  --mangu-black-rgba: 43, 43, 57;
+  --white-rgba: 255, 255, 255;
+  --black-rgba: 0, 0, 0;
+
+  /* Colors Name */
+  --black: rgba(var(--black-rgba));
+  --white: rgb(var(--white-rgba));
+  --orange-pepper: var(--orange-pepper-rgba);
+  --circumorbital-ring: var(--circumorbital-ring-rgba);
+  --mangu-black: var(--mangu-black-rgba);
+  --eyeball: #fffcf7;
+
+  /* space */
+  --space-2xl: 24px;
+  --space-xl: 20px;
+  --space-lg: 16px;
+  --space-md: 12px;
+  --space-sm: 8px;
+  --space-xs: 4px;
+
+  /* header height */
+  --header-height: 100px;
+
+  /* container */
+  --container-width: 1280px;
+
+  /* transition */
+  --transition-smooth: all 0.3s;
+
+  /* section default space */
+  --section-default-space: 14.8rem;
+}

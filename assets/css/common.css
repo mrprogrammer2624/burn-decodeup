@@ -1,0 +1,124 @@
+/* header CSS start */
+header {
+  min-height: var(--header-height);
+  border-bottom: 1px solid rgba(var(--black-rgba), 0.08);
+  z-index: 9;
+}
+
+.header-container {
+  grid-template-columns: 1fr 1fr;
+}
+
+.logo-wrapper {
+  width: 60px;
+  height: 60px;
+}
+
+.navListLinkWrapper {
+  grid-gap: 3.2rem;
+  align-items: center;
+  justify-content: end;
+}
+
+.navListLink {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: rgba(var(--mangu-black), 1);
+}
+
+.navListLink:hover,
+.navListLink.active {
+  color: rgba(var(--circumorbital-ring-rgba), 1);
+}
+
+.header-right-side {
+  z-index: 999;
+  gap: var(--space-sm);
+}
+
+/* Hamburger  Start */
+.hamburger {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  min-width: inherit;
+  min-height: inherit;
+  border-radius: inherit;
+}
+
+.hamburger .line {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 6;
+  transition: stroke-dasharray 0.1s cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hamburger .line:first-child {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.hamburger .line:nth-child(2) {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+
+.hamburger .line:last-child {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.navBarOpen .hamburger .line:first-child {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+.navBarOpen .hamburger .line:nth-child(2) {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+
+.navBarOpen .hamburger .line:last-child {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+/* Hamburger End */
+
+/* OffCanvas Start */
+.offcanvas-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(var(--black-rgba), 0.5);
+}
+
+.navBarOpen .offcanvas-backdrop {
+  display: block;
+  opacity: 1;
+}
+
+.offcanvas-backdrop {
+  display: none;
+}
+
+/* OffCanvas End */
+/* >> HEADER CSS << END */
+
+/* >> Page CSS << START */
+.section-extra {
+  background-color: antiquewhite;
+}
+
+.section-extra h3 {
+  text-align: center;
+}
+/* >> Page CSS << END */
