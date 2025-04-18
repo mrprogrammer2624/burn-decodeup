@@ -16,4 +16,12 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   toggleButton.addEventListener("click", toggleSidebar);
+
+  getStartedBtn.addEventListener("click", () => {
+    alert("Getting Started!");
+  });
+
+  learnMoreBtn.addEventListener("click", () => {
+    alert("Learn More...");
+  });
 });
